@@ -23,10 +23,14 @@ pipeline {
         stage("host website"){
             steps{
                 sh """
-                
+
                     cd /var/www
 
                     mkdir website
+
+                    cd website
+
+                    git clone https://github.com/theoafactor/simple_personal_devops.git .
 
                     
 
