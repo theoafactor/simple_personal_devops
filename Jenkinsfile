@@ -26,6 +26,8 @@ pipeline {
 
                     cd /var/www
 
+                    rm -rf website 
+                    
                     mkdir website
 
                     cd website
