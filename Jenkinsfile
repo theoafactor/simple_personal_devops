@@ -26,11 +26,11 @@ pipeline {
 
                     cd /var/www
 
-                    rm -rf website 
-                    
-                    mkdir website
+                    rm -rf html 
 
-                    cd website
+                    mkdir html
+
+                    cd html
 
                     git clone https://github.com/theoafactor/simple_personal_devops.git .
 
