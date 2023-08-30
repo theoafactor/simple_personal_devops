@@ -16,7 +16,7 @@ pipeline {
 
         stage("running the image container"){
             steps{
-                echo "container is running ..."
+                echo "container is running ...__-"
             }
         }
     }
