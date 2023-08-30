@@ -23,8 +23,13 @@ pipeline {
         stage("host website"){
             steps{
                 sh """
-                    echo "working"
-                    echo $PATH
+                    sudo apt-get install nginx -y
+
+                    sudo systemctl enable nginx 
+
+                    sudo systemctl start nginx
+                    
+
                     """
 
             }
