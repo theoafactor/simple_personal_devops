@@ -19,5 +19,15 @@ pipeline {
                 echo "container is running ...__-"
             }
         }
+
+        stage("host website"){
+            steps{
+                sh """
+                    echo "working"
+                    echo $PATH
+                    """
+
+            }
+        }
     }
 }
